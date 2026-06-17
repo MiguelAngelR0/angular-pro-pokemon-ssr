@@ -7,6 +7,14 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'pokemons',
+    loadComponent:() =>import('./pages/pokemons/pokemonsPage')
+  },
+  {
+    path: 'pokemon/:id',
+    loadComponent:() =>import('./pages/pokemon-page/pokemon-page')
+  },
+  {
     path: 'about',
     loadComponent:() =>import('./pages/about/about-pages')
   },
